@@ -1,0 +1,710 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>David Riascos | Ing. Sistemas & Soporte Tecnico</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Floating Nav -->
+    <nav class="floating-nav" id="floatingNav">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">
+          <div class="logo-icon">D</div>
+          <span class="logo-text">David</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-menu" id="navMenu">
+          <a href="#inicio" class="nav-link active">Inicio</a>
+          <a href="#sobre-mi" class="nav-link">Sobre mi</a>
+          <a href="#habilidades" class="nav-link">Skills</a>
+          <a href="#contacto" class="nav-link">Contacto</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+      <div class="hero-particles" id="particles"></div>
+      <div class="hero-content">
+        <div class="hero-badge" data-reveal>
+          <span class="badge-dot"></span>
+          <span class="badge-text">Disponible para proyectos</span>
+        </div>
+        <h1 class="hero-title" data-reveal>
+          <span class="title-line">Bienvenidos, soy</span>
+          <span class="title-line name">David Riascos</span>
+        </h1>
+        <p class="hero-subtitle" data-reveal>
+          <span class="typing-text" id="typingText"></span>
+          <span class="cursor">|</span>
+        </p>
+        <p class="hero-desc" data-reveal>
+          Transformo problemas tecnicos en soluciones. Especialista en
+          mantenimiento, reparacion y diagnostico de dispositivos moviles con
+          precision de microsoldadura.
+        </p>
+        <div class="hero-actions" data-reveal>
+          <a href="#contacto" class="btn btn-primary">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+            </svg>
+            Hablemos
+          </a>
+          <a href="#habilidades" class="btn btn-outline">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+            Ver skills
+          </a>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre Mi -->
+    <section class="about section" id="sobre-mi">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">Sobre mi</span>
+          <h2 class="section-title">
+            Tecnico apasionado por<br /><span class="text-gradient"
+              >resolver lo imposible</span
+            >
+          </h2>
+        </div>
+        <div class="about-layout">
+          <div class="about-visual" data-reveal>
+            <div class="about-card main-card">
+              <div class="card-glow"></div>
+              <div class="card-accent"></div>
+              <div class="about-stats">
+                <div class="stat-item">
+                  <div class="stat-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    >
+                      <path
+                        d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                      />
+                    </svg>
+                  </div>
+                  <div class="stat-info">
+                    <span class="stat-number">8+</span>
+                    <span class="stat-label">meses de<br />experiencia</span>
+                  </div>
+                </div>
+              </div>
+              <div class="about-card-content">
+                <h3 class="about-card-title">Precision tecnica</h3>
+                <p class="about-card-text">
+                  Cada reparacion es un reto que se resuelve con metodo,
+                  paciencia y conocimiento profundo del hardware.
+                </p>
+              </div>
+            </div>
+            <div class="about-card mini-card" data-reveal>
+              <div class="mini-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"
+                  />
+                </svg>
+              </div>
+              <h4>Microsoldadura</h4>
+              <p>Trabajo a nivel microscopico</p>
+            </div>
+            <div class="about-card mini-card" data-reveal>
+              <div class="mini-icon orange">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                  <line x1="12" y1="18" x2="12.01" y2="18" />
+                </svg>
+              </div>
+              <h4>Reparacion movil</h4>
+              <p>Hardware y diagnostico avanzado</p>
+            </div>
+          </div>
+          <div class="about-text" data-reveal>
+            <p class="about-lead">
+              Me dedico a entender como funcionan las cosas desde adentro. No me
+              quedo en la superficie: desarmo, analizo, reparo y optimizo.
+            </p>
+            <p class="about-body">
+              Mi enfoque esta en el
+              <strong
+                >mantenimiento tecnico, reparacion y soporte de equipos
+                moviles</strong
+              >, combinando conocimientos de ingenieria con habilidades manuales
+              de precision. Desde el diagnostico de fallas hasta la
+              microsoldadura de componentes, busco siempre la solucion mas
+              eficiente y duradera.
+            </p>
+            <p class="about-body">
+              Tambien exploro el mundo de las
+              <strong>redes e infraestructura tecnologica</strong>, porque
+              entender como se conectan los sistemas es clave para construir
+              soluciones completas.
+            </p>
+            <div class="about-cta">
+              <a href="#contacto" class="btn btn-primary">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                </svg>
+                Trabajemos juntos
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills section" id="habilidades">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">Skills</span>
+          <h2 class="section-title">
+            Lo que hago<br /><span class="text-gradient">de forma experta</span>
+          </h2>
+        </div>
+        <div class="skills-grid">
+          <!-- Skill 1 -->
+          <div class="skill-card" data-reveal>
+            <div class="skill-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M5 12.55a11 11 0 0114.08 0M1.42 9a16 16 0 0121.16 0M8.53 16.11a6 6 0 016.95 0M12 20h.01"
+                />
+              </svg>
+            </div>
+            <h3 class="skill-title">Redes y comunicaciones</h3>
+            <p class="skill-desc">
+              Configuracion y optimizacion de infraestructura de red.
+              Conectividad estable y entornos digitales eficientes.
+            </p>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--progress: 70%"></div>
+            </div>
+            <span class="skill-level">Intermedio - Avanzado</span>
+          </div>
+          <!-- Skill 2 -->
+          <div class="skill-card featured" data-reveal>
+            <div class="skill-badge">Principal</div>
+            <div class="skill-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"
+                />
+              </svg>
+            </div>
+            <h3 class="skill-title">Reparacion de dispositivos moviles</h3>
+            <p class="skill-desc">
+              Diagnostico preciso, reemplazo de componentes y solucion de fallas
+              de hardware en smartphones y tablets.
+            </p>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--progress: 90%"></div>
+            </div>
+            <span class="skill-level">Experto</span>
+          </div>
+          <!-- Skill 3 -->
+          <div class="skill-card" data-reveal>
+            <div class="skill-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"
+                />
+              </svg>
+            </div>
+            <h3 class="skill-title">Soporte y mantenimiento tecnologico</h3>
+            <p class="skill-desc">
+              Mantenimiento preventivo y correctivo de equipos. Resolucion de
+              incidencias y optimizacion de rendimiento.
+            </p>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--progress: 85%"></div>
+            </div>
+            <span class="skill-level">Avanzado</span>
+          </div>
+          <!-- Skill 4 -->
+          <div class="skill-card featured" data-reveal>
+            <div class="skill-badge">Destacado</div>
+            <div class="skill-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                />
+              </svg>
+            </div>
+            <h3 class="skill-title">Infraestructura tecnologica</h3>
+            <p class="skill-desc">
+              Implementacion y gestion de infraestructura que soporta
+              operaciones tecnologicas de forma eficiente y escalable.
+            </p>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--progress: 65%"></div>
+            </div>
+            <span class="skill-level">Intermedio</span>
+          </div>
+          <!-- Skill 5 -->
+          <div class="skill-card featured" data-reveal>
+            <div class="skill-badge">Especialidad</div>
+            <div class="skill-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3 class="skill-title">Microsoldadura y electronica</h3>
+            <p class="skill-desc">
+              Intervencion a nivel componente electronico con tecnicas de
+              microsoldadura. Precision milimetrica.
+            </p>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--progress: 88%"></div>
+            </div>
+            <span class="skill-level">Avanzado</span>
+          </div>
+          <!-- Skill 6 -->
+          <div class="skill-card" data-reveal>
+            <div class="skill-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+              </svg>
+            </div>
+            <h3 class="skill-title">Diagnostico de fallas</h3>
+            <p class="skill-desc">
+              Analisis sistematico para identificar problemas de hardware y
+              software. Metodologia eficiente de resolucion.
+            </p>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--progress: 92%"></div>
+            </div>
+            <span class="skill-level">Experto</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner" data-reveal>
+      <div class="cta-particles" id="ctaParticles"></div>
+      <div class="container">
+        <div class="cta-content">
+          <h2 class="cta-title">
+            Tienes un dispositivo que necesita<br /><span class="text-gradient"
+              >atencion profesional?</span
+            >
+          </h2>
+          <p class="cta-desc">
+            Diagnostico sin compromiso. Reparaciones con garantia y la confianza
+            de quien entiende cada componente.
+          </p>
+          <a href="#contacto" class="btn btn-primary btn-large">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"
+              />
+            </svg>
+            Contactar ahora
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact section" id="contacto">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag">Contacto</span>
+          <h2 class="section-title">
+            Hablemos<br /><span class="text-gradient">Estoy para ayudarte</span>
+          </h2>
+        </div>
+        <div class="contact-layout">
+          <div class="contact-info" data-reveal>
+            <div class="contact-block">
+              <div class="contact-label">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                Correo
+              </div>
+              <a href="mailto:williamsitoserio@gmail.com" class="contact-value"
+                >williamsitoserio@gmail.com</a
+              >
+            </div>
+            <div class="contact-block">
+              <div class="contact-label">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"
+                  />
+                </svg>
+                Telefono / WhatsApp
+              </div>
+              <a
+                href="https://wa.me/573167048783"
+                target="_blank"
+                class="contact-value"
+                >+57 316 704 8783</a
+              >
+            </div>
+            <div class="contact-block">
+              <div class="contact-label">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                Ubicacion
+              </div>
+              <span class="contact-value">Colombia</span>
+            </div>
+            <div class="social-section">
+              <span class="social-title">Sigueme en</span>
+              <div class="social-links">
+                <a
+                  href="#"
+                  class="social-link"
+                  title="LinkedIn"
+                  target="_blank"
+                >
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="social-link"
+                  title="Instagram"
+                  target="_blank"
+                >
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="social-link" title="GitHub" target="_blank">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-wrapper" data-reveal>
+            <div class="form-card">
+              <h3 class="form-title">Envia un mensaje</h3>
+              <p class="form-subtitle">Respondo lo mas rapido posible</p>
+              <form
+                class="contact-form"
+                id="contactForm"
+                action="#"
+                method="POST"
+              >
+                <div class="form-group">
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    class="form-input"
+                    placeholder="Tu nombre"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label"
+                    >Correo electronico</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-input"
+                    placeholder="williamsitoserio@gmail.com"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="asunto" class="form-label">Asunto</label>
+                  <select
+                    id="asunto"
+                    name="asunto"
+                    class="form-select"
+                    required
+                  >
+                    <option value="" disabled selected>
+                      Selecciona un tema
+                    </option>
+                    <option value="reparacion">
+                      Reparacion de dispositivo
+                    </option>
+                    <option value="mantenimiento">Mantenimiento tecnico</option>
+                    <option value="consulta">Consulta tecnica</option>
+                    <option value="redes">Redes e infraestructura</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="mensaje" class="form-label">Mensaje</label>
+                  <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    class="form-textarea"
+                    rows="4"
+                    placeholder="Cuentame que necesitas..."
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-submit"
+                  id="submitBtn"
+                >
+                  <span class="btn-text">Enviar mensaje</span>
+                  <span class="btn-loader"></span>
+                  <svg
+                    class="btn-icon"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                  </svg>
+                </button>
+              </form>
+              <div class="form-success" id="formSuccess">
+                <div class="success-icon">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                    <polyline points="22 4 12 14.01 9 11.01" />
+                  </svg>
+                </div>
+                <h4>Mensaje enviado!</h4>
+                <p>Gracias por contactarme. Te respondere pronto.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <div class="logo-icon">D</div>
+              <span>David Riascos</span>
+            </div>
+            <p class="footer-desc">
+              Ingeniero de Sistemas enfocado en soluciones tecnicas, reparacion
+              de dispositivos y microsoldadura.
+            </p>
+          </div>
+          <div class="footer-links">
+            <a href="#inicio" class="footer-link">Inicio</a>
+            <a href="#sobre-mi" class="footer-link">Sobre mi</a>
+            <a href="#habilidades" class="footer-link">Skills</a>
+            <a href="#contacto" class="footer-link">Contacto</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="copyright">David Riascos. Todos los derechos reservados.</p>
+          <p class="credit">Hecho con precision</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // Evita que la página salte al inicio
+
+          // Capturamos lo que el usuario escribió
+          let nombre = document.getElementById("nombre").value;
+          let email = document.getElementById("email").value;
+          let asunto = document.getElementById("asunto").value;
+          let mensaje = document.getElementById("mensaje").value;
+
+          // Armamos el mensaje para WhatsApp
+          let texto = `¡Hola William! Te escribo desde tu sitio web.%0A%0A*Nombre:* ${nombre}%0A*Correo:* ${email}%0A*Asunto:* ${asunto}%0A*Mensaje:* ${mensaje}`;
+
+          // Tu número de WhatsApp
+          let numero = "573167048783";
+          let url = `https://wa.me/${numero}?text=${texto}`;
+
+          // Abrimos WhatsApp en una nueva pestaña
+          window.open(url, "_blank");
+
+          // Mostramos tu bonito mensaje de éxito y ocultamos el formulario
+          document.getElementById("contactForm").style.display = "none";
+          document.getElementById("formSuccess").style.display = "block";
+        });
+    </script>
+  </body>
+</html>
